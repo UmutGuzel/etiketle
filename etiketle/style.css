@@ -1,0 +1,55 @@
+
+.card {
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+}
+
+.ust {
+    margin-top: 0;
+}
+.col-4{
+    text-align: center;
+}
+
+.color-orange {
+    background-color: #ff5a58;
+    color: white;
+    border: 1px solid #ff5a58;
+}
+
+.color-orange:hover {
+    background-color: white;
+    color: #ff5a58;
+    border: 1px solid #ff5a58;
+}
+
+.color-blue {
+    background-color: #1b5a8d;
+    color: white;
+    border: 1px solid #1b5a8d;
+}
+
+.color-blue:hover {
+    background-color: white;
+    color: #1b5a8d;
+    border: 1px solid #1b5a8d;
+}
+
+#dynamicText {
+    opacity: 1;
+    transition: opacity 0.5s;
+    font-weight: bold;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+
+#dynamicText.fade {
+    opacity: 0;
+}

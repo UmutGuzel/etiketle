@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+
+      .card{
+        transition: transform 0.5s ease;
+      }
+        .card:hover {
+  transform: scale(1.1);
+  
+}
+        .ust{
+            margin-top: 0;
+        }
+        .color-orange{
+            background-color: #ff5a58;
+            color: white;
+            border: 1px solid #ff5a58;
+        }
+        .color-orange:hover{
+            background-color: white;
+            color: #ff5a58;
+            border: 1px solid #ff5a58;
+        }
+        .color-blue{
+            background-color: #1b5a8d;
+            color: white;
+            border: 1px solid #1b5a8d;
+        }
+        .color-blue:hover{
+            background-color: white;
+            color: #1b5a8d;
+            border: 1px solid #1b5a8d;
+        }
+
+        footer{
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+
+        .btn-primary{
+          background-color: #1b5a8d;
+        }
+    </style>
+</head>
+<body>
+    <header class=" pb-3 border-bottom border-1">
+        <section class="top-bar">
+            <div class="container">
+                <div class="row gy-3 ust  align-items-center">
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <a href="list.html" class="navbar-brand fw-bold"><span style="color: #ff5a58;">ETİKETLE</span><span style="color: #1b5a8d ;">.COM</span></a>
+                    </div>
+                    <div class="order-lg-last col-lg-10 col-sm-8 col-8">
+                        <div class="text-end">
+                            <div class="btn-group">
+                                <button type="button" class="btn color-orange dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user"></i> <span class="ms-1 d-none d-sm-inline-block">Hesabım</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="isim">İsim Değiştir</a></li>
+                                <li><a class="dropdown-item" href="#">Şifre Değiştir</a></li>
+                                </ul>
+                            </div>
+                            <a href="veri.html" class="btn color-blue">
+                                <i class="fa-solid fa-upload"></i> <span class="ms-1 d-none d-sm-inline-block">Veri Seti Yükle</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+ <main>
+    <form id="form" class=" container mt-5 w-50">
+        <div class="mb-3 text-center">
+            <label for="adress" class="form-label">Başlık</label>
+            <input type="text" class="form-control" name="title" id="title" required>
+            <label for="adress" class="form-label">Etiketlediğiniz Veri hakkındak Vermek İstediğiniz Ek Bilgiler </label>
+            <textarea name="adress" id="adress" class="form-control form-control-lg" required></textarea>
+        </div>
+        <div class="mb-3 text-center">
+            <label for="file" class="form-label">File</label>
+            <input type="file" id="file" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary"> Gönder</button>
+    </form>
+ </main>
+
+    <footer class="py-4 " style="background-color: #1b5a8d;">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-4">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <button class="btn" style="color: white; border: 1px solid white;">Abone Ol</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <nav class="text-center text-md-end">
+                        <a href="#" class="btn btn-icon" style="color: white; border: 1px solid white;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon "style="color: white; border: 1px solid white;" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon" style="color: white; border: 1px solid white;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon" style="color: white; border: 1px solid white;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-center text-white">
+                        @2025 etiketle.com'un tüm hakları saklıdır
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/upload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/checkAuthentication.js"></script>
+</body>
+</html>
